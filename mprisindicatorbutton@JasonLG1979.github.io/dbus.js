@@ -1816,14 +1816,14 @@ const MprisProxyHandler = GObject.registerClass({
         } else {
             if (this._playerProxy.Shuffle !== null) {
                 let initialShuffle = this._playerProxy.Shuffle || false;
-                this._playerProxy.Shuffle = !initialShuffle;
+                // this._playerProxy.Shuffle = !initialShuffle;
                 this._playerProxy.Shuffle = initialShuffle;
             }
             if (this._playerProxy.LoopStatus !== null) {
                 let initialLoopStatus = this._playerProxy.LoopStatus || 'None';
-                this._playerProxy.LoopStatus = initialLoopStatus === 'None' ? 'Playlist'
-                    : initialLoopStatus === 'Playlist' ? 'Track'
-                    : 'None';
+                // this._playerProxy.LoopStatus = initialLoopStatus === 'None' ? 'Playlist'
+                //     : initialLoopStatus === 'Playlist' ? 'Track'
+                //     : 'None';
                 this._playerProxy.LoopStatus = initialLoopStatus;
             }
         }
@@ -1883,11 +1883,11 @@ const MprisProxyHandler = GObject.registerClass({
         // remains hidden since it's pointless to show a widget that doesn't do anything...
         if (this._playerProxy.Volume) {
             let initialVolume = this._playerProxy.Volume || 0.0;
-            this._playerProxy.Volume = initialVolume <= 0.0
-                ? 0.1
-                : initialVolume >= 1.0
-                ? 0.9
-                : Math.min(initialVolume - 0.1, 0.0);
+            // this._playerProxy.Volume = initialVolume <= 0.0
+            //     ? 0.1
+            //     : initialVolume >= 1.0
+            //    ? 0.9
+            //    : Math.min(initialVolume - 0.1, 0.0);
             this._playerProxy.Volume = initialVolume;
         }
     }

@@ -4,5 +4,6 @@
 "description": "A full featured MPRIS indicator.",
 "original-author": "JasonLG1979@github.io",
 "shell-version": ["3.38", "40"],
-"url": "https://github.com/JasonLG1979/gnome-shell-extension-mpris-indicator-button/"
+"url": "https://github.com/JasonLG1979/gnome-shell-extension-mpris-indicator-button/",
+"version": 18
 }
